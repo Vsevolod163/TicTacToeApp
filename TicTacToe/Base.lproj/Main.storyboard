@@ -162,6 +162,20 @@
                             <constraint firstItem="STm-fk-Jpc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQT-aY-w74"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eighthSquareButton" destination="ulE-5y-CdX" id="N7f-B0-iVP"/>
+                        <outlet property="fifthSquareButton" destination="gYb-Jy-KWf" id="u6N-VF-jQq"/>
+                        <outlet property="firstSquareButton" destination="ooy-mV-KBo" id="SSP-LX-2K2"/>
+                        <outlet property="fourthSquareButton" destination="eR0-YW-DaT" id="9Ge-WJ-BUE"/>
+                        <outlet property="newGameButton" destination="0dC-0C-iyV" id="Zye-BH-yr6"/>
+                        <outlet property="ninthSquareButton" destination="GOt-L8-Rui" id="Bz2-jM-zCQ"/>
+                        <outlet property="resultOfGameButton" destination="YX2-f9-Jhy" id="BiG-rE-AxN"/>
+                        <outlet property="secondSquareButton" destination="m1s-hw-sic" id="WmJ-yv-OgA"/>
+                        <outlet property="seventhSquareButton" destination="LqZ-Su-UWV" id="EnF-2B-W7h"/>
+                        <outlet property="sixthSquareButton" destination="2N1-Yn-Zrl" id="Fjn-f3-0Qd"/>
+                        <outlet property="thirdSquareButton" destination="TQx-MA-45S" id="2Zs-c7-Wml"/>
+                        <outlet property="ticTacToeLabel" destination="N6d-Xa-N1Q" id="U4u-VE-9Ut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
