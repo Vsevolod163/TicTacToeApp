@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,154 +12,187 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="STm-fk-Jpc">
-                                <rect key="frame" x="89" y="204.66666666666666" width="215" height="442.66666666666674"/>
+                                <rect key="frame" x="97.666666666666686" y="270" width="235" height="392"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-Xa-N1Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="215" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dC-0C-iyV">
-                                        <rect key="frame" x="30.666666666666671" y="92.000000000000028" width="153.66666666666663" height="36"/>
+                                        <rect key="frame" x="34.333333333333329" y="92" width="166" height="36"/>
                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="New Game">
                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapNewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdO-q6-Iyr"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nQp-2q-AbC">
-                                        <rect key="frame" x="0.0" y="160.00000000000006" width="215" height="214.66666666666669"/>
+                                        <rect key="frame" x="1.3333333333333286" y="160" width="232" height="232"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gpC-BY-Bn3">
-                                                <rect key="frame" x="0.0" y="0.0" width="215" height="66.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="232" height="72"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqZ-Su-UWV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="66.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="LqZ-Su-UWV" secondAttribute="height" multiplier="1:1" id="e1F-Ow-4wD"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nT5-fO-bgZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulE-5y-CdX">
-                                                        <rect key="frame" x="74.333333333333343" y="0.0" width="66.333333333333343" height="66.333333333333329"/>
+                                                        <rect key="frame" x="80" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHP-7R-0Kl"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOt-L8-Rui">
-                                                        <rect key="frame" x="148.66666666666666" y="0.0" width="66.333333333333343" height="66.333333333333329"/>
+                                                        <rect key="frame" x="160" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGc-YH-69a"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ol5-tv-QvV">
-                                                <rect key="frame" x="0.0" y="74.333333333333314" width="215" height="66"/>
+                                                <rect key="frame" x="0.0" y="80" width="232" height="72"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-YW-DaT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="66"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="eR0-YW-DaT" secondAttribute="height" multiplier="1:1" id="qXr-bK-sSG"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKB-gj-id0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYb-Jy-KWf">
-                                                        <rect key="frame" x="74.333333333333343" y="0.0" width="66.333333333333343" height="66"/>
+                                                        <rect key="frame" x="80" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGx-zK-kbg"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N1-Yn-Zrl">
-                                                        <rect key="frame" x="148.66666666666666" y="0.0" width="66.333333333333343" height="66"/>
+                                                        <rect key="frame" x="160" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apA-kY-4aW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dus-iA-vj3">
-                                                <rect key="frame" x="0.0" y="148.33333333333331" width="215" height="66.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="160" width="232" height="72"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-mV-KBo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="66.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ooy-mV-KBo" secondAttribute="height" multiplier="1:1" id="UqU-zs-jz4"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKR-DX-H5c"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1s-hw-sic">
-                                                        <rect key="frame" x="74.333333333333343" y="0.0" width="66.333333333333343" height="66.333333333333329"/>
+                                                        <rect key="frame" x="80" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Q5-yb-tFH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-MA-45S">
-                                                        <rect key="frame" x="148.66666666666666" y="0.0" width="66.333333333333343" height="66.333333333333329"/>
+                                                        <rect key="frame" x="160" y="0.0" width="72" height="72"/>
                                                         <color key="backgroundColor" red="1" green="0.041334743090000001" blue="0.37501884279999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="X">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieX-gy-F4s"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПОБЕДА!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YX2-f9-Jhy">
-                                        <rect key="frame" x="42.333333333333343" y="406.66666666666674" width="130.33333333333334" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="0dC-0C-iyV" firstAttribute="width" secondItem="nQp-2q-AbC" secondAttribute="height" multiplier="5:7" id="LHI-4N-NGG"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YX2-f9-Jhy">
+                                <rect key="frame" x="150" y="699" width="130.33333333333337" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.058322020210556463" green="0.056735140391401949" blue="0.13679929123711343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="STm-fk-Jpc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1FJ-U6-dqQ"/>
                             <constraint firstItem="STm-fk-Jpc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="235:932" id="Bot-dT-FH9"/>
+                            <constraint firstItem="YX2-f9-Jhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jd8-xb-t6A"/>
                             <constraint firstItem="STm-fk-Jpc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQT-aY-w74"/>
+                            <constraint firstItem="YX2-f9-Jhy" firstAttribute="top" secondItem="STm-fk-Jpc" secondAttribute="bottom" constant="37" id="uYN-0a-znI"/>
+                            <constraint firstItem="YX2-f9-Jhy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.303101" id="wet-Lg-QTc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -179,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.674418604651166" y="3.218884120171674"/>
+            <point key="canvasLocation" x="346" y="37"/>
         </scene>
     </scenes>
 </document>
