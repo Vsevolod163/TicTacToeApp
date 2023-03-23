@@ -196,23 +196,23 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="eighthSquareButton" destination="ulE-5y-CdX" id="N7f-B0-iVP"/>
-                        <outlet property="fifthSquareButton" destination="gYb-Jy-KWf" id="u6N-VF-jQq"/>
-                        <outlet property="firstSquareButton" destination="ooy-mV-KBo" id="SSP-LX-2K2"/>
-                        <outlet property="fourthSquareButton" destination="eR0-YW-DaT" id="9Ge-WJ-BUE"/>
-                        <outlet property="newGameButton" destination="0dC-0C-iyV" id="Zye-BH-yr6"/>
-                        <outlet property="ninthSquareButton" destination="GOt-L8-Rui" id="Bz2-jM-zCQ"/>
+                        <outlet property="eighthSquareButton" destination="ulE-5y-CdX" id="Xml-6j-3uZ"/>
+                        <outlet property="fifthSquareButton" destination="gYb-Jy-KWf" id="b8u-Vy-Q4d"/>
+                        <outlet property="firstSquareButton" destination="ooy-mV-KBo" id="o1v-81-8Fm"/>
+                        <outlet property="fourthSquareButton" destination="eR0-YW-DaT" id="fWn-zR-hyq"/>
+                        <outlet property="newGameButton" destination="0dC-0C-iyV" id="9r8-Bh-END"/>
+                        <outlet property="ninthSquareButton" destination="GOt-L8-Rui" id="oUE-Bh-Bvd"/>
                         <outlet property="resultOfGameButton" destination="YX2-f9-Jhy" id="BiG-rE-AxN"/>
-                        <outlet property="secondSquareButton" destination="m1s-hw-sic" id="WmJ-yv-OgA"/>
-                        <outlet property="seventhSquareButton" destination="LqZ-Su-UWV" id="EnF-2B-W7h"/>
-                        <outlet property="sixthSquareButton" destination="2N1-Yn-Zrl" id="Fjn-f3-0Qd"/>
-                        <outlet property="thirdSquareButton" destination="TQx-MA-45S" id="2Zs-c7-Wml"/>
+                        <outlet property="secondSquareButton" destination="m1s-hw-sic" id="G5f-tm-0RL"/>
+                        <outlet property="seventhSquareButton" destination="LqZ-Su-UWV" id="yXb-r0-ccM"/>
+                        <outlet property="sixthSquareButton" destination="2N1-Yn-Zrl" id="rri-Ro-WEE"/>
+                        <outlet property="thirdSquareButton" destination="TQx-MA-45S" id="GKU-BM-0iC"/>
                         <outlet property="ticTacToeLabel" destination="N6d-Xa-N1Q" id="U4u-VE-9Ut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="37"/>
+            <point key="canvasLocation" x="406" y="-162"/>
         </scene>
     </scenes>
 </document>
