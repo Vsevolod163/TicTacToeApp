@@ -12,6 +12,7 @@ final class ViewController: UIViewController {
     @IBOutlet var ticTacToeLabel: UILabel!
     @IBOutlet var resultOfGameButton: UILabel!
     
+    
     @IBOutlet var newGameButton: UIButton!
     @IBOutlet var firstSquareButton: UIButton!
     @IBOutlet var secondSquareButton: UIButton!
